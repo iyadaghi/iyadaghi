@@ -438,6 +438,8 @@ footer p {
 
 .section__pic-container,
 .about-details-container {
-  flex: 1; 
+  flex: 1 1 50%;      /* elk neemt ongeveer de helft */
+  min-width: 300px;   /* breekt niet te klein */
+  box-sizing: border-box;
 }
 
