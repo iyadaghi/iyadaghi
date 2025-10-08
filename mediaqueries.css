@@ -103,20 +103,3 @@
 }
 
 
-.section__pic-container {
-  width: 275px;
-  height: 275px;
-  margin: 0 auto 2rem;
-  border-radius: 50%;          /* maakt de container rond */
-  overflow: hidden;            /* verbergt alles buiten de cirkel */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section__pic-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;           /* zorgt dat de foto mooi vult */
-  border-radius: 50%;          /* extra beveiliging dat de foto rond is */
-}
