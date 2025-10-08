@@ -158,7 +158,11 @@ section {
 
 .section-container {
   display: flex;
+  align-items: center; /* zorgt dat beide verticaal in het midden staan */
+  justify-content: space-between; /* ruimte tussen de twee kolommen */
+  gap: 2rem; /* wat lucht ertussen */
 }
+
 
 /* PROFILE SECTION */
 
@@ -430,3 +434,10 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+.section__pic-container,
+.about-details-container {
+  flex: 1; 
+}
+
