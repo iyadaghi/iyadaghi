@@ -174,9 +174,10 @@ section {
   flex-direction: column; /* 📍 alles onder elkaar */
   align-items: center;    /* 📍 horizontaal centreren */
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   height: 80vh;
   text-align: center;
+  margin-bottom: 6rem;
 }
 
 /* Foto-container bovenaan */
