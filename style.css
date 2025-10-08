@@ -271,56 +271,67 @@ section {
 }
 
 /* ABOUT SECTION */
+/* ABOUT SECTION */
 
 #about {
   position: relative;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
+/* Hoofdcontainer waarin alles zit */
+.section-container {
   display: flex;
+  align-items: center;         /* verticaal centreren */
+  justify-content: space-between; /* netjes naast elkaar */
+  gap: 4rem;
+  height: auto;
+  flex-wrap: wrap;            /* breekt mooi op kleinere schermen */
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.details-container {
-  padding: 1.5rem;
+/* Foto-container links */
+.section__pic-container {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  height: auto;
+  margin: auto 0;
+}
+
+/* Rechterkant (details + tekst) */
+.about-details-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;     /* laat de tekst en cards onder elkaar */
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* De containers met je cards */
+.about-containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Elke card */
+.details-container {
+  flex: 1;
+  padding: 1.5rem;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
+  min-width: 200px;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+/* Optioneel: afbeelding styling */
+.about-pic {
+  border-radius: 2rem;
+  max-width: 100%;
+  height: auto;
 }
 
 /* EXPERIENCE SECTION */
