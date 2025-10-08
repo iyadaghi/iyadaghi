@@ -158,10 +158,12 @@ section {
 
 .section-container {
   display: flex;
-  align-items: center; /* zorgt dat beide verticaal in het midden staan */
-  justify-content: space-between; /* ruimte tussen de twee kolommen */
-  gap: 2rem; /* wat lucht ertussen */
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; 
 }
+
 
 
 /* PROFILE SECTION */
