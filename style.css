@@ -168,25 +168,35 @@ section {
 
 /* PROFILE SECTION */
 
+/* PROFILE SECTION */
 #profile {
   display: flex;
+  flex-direction: column; /* 📍 alles onder elkaar */
+  align-items: center;    /* 📍 horizontaal centreren */
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   height: 80vh;
+  text-align: center;
 }
 
+/* Foto-container bovenaan */
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-  justify-content: center;  
-  align-items: center
-
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 275px;
+  margin: 0 auto;
 }
 
+.section__pic-container img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 50%;  <-- optioneel als je een ronde foto wilt */
+}
+
+/* Tekst en rest onder de foto */
 .section__text {
-  align-self: center;
   text-align: center;
 }
 
@@ -208,6 +218,7 @@ section {
   text-align: center;
 }
 
+/* Social icons onderaan */
 #socials-container {
   display: flex;
   justify-content: center;
